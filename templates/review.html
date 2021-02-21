@@ -1,0 +1,58 @@
+<head>
+		<link rel="stylesheet" href="/static/css/review.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	</head>
+  	
+	<body>
+    <h2>Are you a university student who would like to provide feedback/insight about a university program, if so enter it below and we will be sure to add it onto the feedback page!</h2>
+		<div class = "frame">
+    <div type="button" class = "btn btn-light" id = "button_open_envelope">Feedback</div>
+			<div class = "message">
+				<form method="post" action="contact.php">
+					<input type="text" name="name" id="name" placeholder=" Name* " required>
+			
+					<input type="email" name="email" id="email" placeholder=" Program* " required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$">
+          
+
+         <select class="form-select" aria-label="Default select example">
+            <option selected>University</option>
+            <option value="1">University of Waterloo</option>
+            <option value="2">University of Toronto</option>
+            <option value="3">McMaster University</option>
+            <option value="3">Western University</option>
+            <option value="3">University of Ottawa</option>
+            <option value="3">McGill University</option>
+            <option value="3">Carelton University</option>
+            <option value="3">Wilfred Laurier University</option>
+            <option value="3">University of British Columbia</option>
+          </select>
+
+           <select class="form-select" aria-label="Default select example">
+            <option selected>Rating Stars</option>
+            <option value="1">1 Star            </option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="3">4 Stars</option>
+            <option value="3">5 Stars</option>
+          </select>
+
+
+					<textarea name="message" id="messarea" placeholder=" Feedback* " required></textarea>
+
+
+          
+
+	
+
+					<input type="text" name="address" id="address" style="display: none;">
+					<input type="submit" value="Send" id="send">
+				</form>
+			</div>
+			<div class = "bottom"></div>			
+			<div class = "left"></div>
+			<div class = "right"></div>
+			<div class = "top"></div>
+			<script src="/static/js/review.js"></script>
+		</div>
+	</body>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+      <h1>Login as High School Student</h1>
+      <form action="/login-hs" method="POST">
+        <div class='text'>
+          <input type="text" name='username' required>
+          <label>Username</label>
+        </div>
+        <div class='text'>
+          <input type="password" name='password' id="password" required>
+          <label>Password</label>
+        </div>
+        <div class="show-pass">
+          <input type="checkbox" id="show-password">
+          <label>Show Password</label>
+        </div>
+        <div class="pass-forgot"><a href="#">Forgot Password?</a></div>
+        <div class="text"><input type="submit" value="Login"></div>
+      </form>
+    </div>
+    </div>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

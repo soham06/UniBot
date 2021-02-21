@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/css/uni-register.css">
+</head>
+<body>
+    <div class="container">
+      <h1>Register as University Student</h1>
+      <div class="pass-unmatching">
+        <h2 id="matching-pass"></h2>
+      </div>
+      <form action="/register-uni" method="POST">
+        <div class='text'>
+          <input type="text" name="first" required>
+          <label>First Name</label>
+        </div>
+        <div class='text'>
+          <input type="text" name="last" required>
+          <label>Last Name</label>
+        </div>
+        <div class='text'>
+          <input type="text" name="email" required>
+          <label>Email Address</label>
+        </div>
+        <div class='text'>
+          <select class="drop-down" name="university">
+            <option value="Select University">Select University</option>
+            <option value="University of Waterloo">University of Waterloo</option>
+            <option value="University of Toronto">University of Toronto</option>
+            <option value="Western University">Western University</option>
+            <option value="University of Ottawa">University of Ottawa</option>
+            <option value="University of British Columbia">University of British Columbia</option>
+            <option value="Carleton University">Carleton University</option>
+            <option value="McGill University">McGill University</option>
+            <option value="Wilfred Laurier University">Wilfred Laurier University</option>
+            <option value="McMaster University">McMaster University</option>
+          </select>
+        </div>
+        <div class='text'>
+          <input type="text" name="program" required>
+          <label>Program Name</label>
+        </div>
+        <div class='text'>
+          <select class="drop-down" name="level">
+            <option value="Level of Study">Level of Study</option>
+            <option value="Undergraduate">Undergraduate</option>
+            <option value="Masters">Masters</option>
+            <option value="PhD">PhD</option>
+            <option value="Alumni">Alumni</option>
+          </select>
+        </div>
+        <div class='text'>
+          <input type="text" name="username" required>
+          <label>Enter Username</label>
+        </div>
+        <div class='text'>
+          <input type="password" id='password' name="password" required>
+          <label>Enter Password</label>
+        </div>
+        <div class='text'>
+          <input type="password" id='passwordTwo' required>
+          <label>Confirm Password</label>
+        </div>
+        <div class="show-pass">
+          <input type="checkbox" id="show-password">
+          <label>Show Password</label>
+        </div>
+        <div class="text"><input type="submit" value="Register"></div>
+      </form>
+    </div>
+    </div>
+    <script src="/static/js/app-two.js"></script>
+</body>
+</html>
