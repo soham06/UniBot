@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background: #f2f2f2;
+    height: 100vh;
+    overflow: hidden;
+    place-items: center;
+}
+
+.container{
+  width: 550px;
+  height: 830px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
+}
+
+.container h1{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 650;
+    line-height: 350%;
+    background: linear-gradient(to left,#00aaff, #00ff6c);
+    border-radius: 12px 12px 0 0;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 550;
+    color: red;
+    padding-top: 20px;
+}
+
+.container form{
+    padding: 10px 25px 50px 30px;
+}
+
+.container form .text{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top:20px;
+}
+
+.container form .text input{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 19px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+.container form .text label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #999;
+    font-size: 18px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+
+form .text input:focus ~ label,
+form .text input:valid ~ label{
+    top: 0%;
+    font-size: 16px;
+    color:black;
+    background: #fff;
+    transform: translateY(-50%);
+  }
+.pass-forgot{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.pass-forgot a:link{
+    color: black;
+}
+
+.container form .text input:focus,
+form .text input:valid{
+  border-color:black;
+}
+
+form .text input[type="submit"] {
+  border: none;
+  padding-left: 0;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(to left,#00aaff, #00ff6c);
+  transition: all 0.3s ease;
+}
+
+.show-pass{
+    padding-top: 15px;
+    text-align: right;
+}
+
+.drop-down{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 19px;
+    border: 1px solid lightgray;
+    outline: none;
+    color: #999;
+    font-size: 18px;
+}

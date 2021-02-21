@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Google+Sans);
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color:  #fff;
+  align-items: center;
+ font-family: 'Google Sans',serif;
+   margin: center;
+       text-align: center;
+         margin-top: 40px;
+   }
+
+.h5 {
+  background-color:  #fff;
+  align-items: center;
+  font-family: 'Google Sans',serif;
+  margin: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background:  #6FD25A;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid  #6FD25A;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: #6FD25A;
+    background: none;
+}
+.container {
+  width: 80%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -200px;
+  margin-bottom: -500px;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color:  white;
+  width: 90%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: -30px;
+  box-shadow: -20px -20px 0px 0px #90ee90;
+  border-radius: 10px;
+  -webkit-animation-name: shadow-show;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1.5s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: shadow-show;
+  animation-duration: 1.5s;
+  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  /* custom */
+}
+.card h1, .card h2, .card h3, .card h4, .card h5 {
+  margin: 0px;
+  padding: 0px 0px 15px 0px;
+    font-family: 'Google Sans',serif;
+  font-size: 30px;
+  color: #282828;
+}
+.card hr {
+  display: block;
+  border: none;
+  height: 3px;
+  background-color: 6FD25A;
+  margin: 0px;
+  -webkit-animation-name: line-show;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.3s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: line-show;
+  animation-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  /* custom */
+}
+.card p {
+  margin: 15px 0px 0px 0px;
+    font-family: 'Google Sans',serif;
+  font-weight: 100;
+  letter-spacing: -0.25px;
+  line-height: 1.25;
+  font-size: 16px;
+  word-break: break-all;
+  word-wrap: pre-wrap;
+  color: #282828;
+  -webkit-animation-name: p-show;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1.5s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: p-show;
+  animation-duration: 1.5s;
+}
+.card button {
+  border: none;
+  background-color: black;
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px 30px;
+  color: white;
+    font-family: 'Google Sans',serif;
+  text-transform: uppercase;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes line-show {
+  from {
+    margin: 0px 100px;
+  }
+  to {
+    margin: 0px;
+  }
+}
+/* Standard syntax */
+@keyframes line-show {
+  from {
+    margin: 0px 100px;
+  }
+  to {
+    margin: 0px;
+  }
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes p-show {
+  from {
+    color: white;
+  }
+  to {
+    color: #282828;
+  }
+}
+/* Standard syntax */
+@keyframes p-show {
+  from {
+    color: white;
+  }
+  to {
+    color: #282828;
+  }
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes shadow-show {
+  from {
+    box-shadow: 0px 0px 0px 0px #90ee90;
+  }
+  to {
+    box-shadow: -20px -20px 0px 0px #6FD25A;
+  }
+}
+/* Standard syntax */
+@keyframes shadow-show {
+  from {
+    box-shadow: 0px 0px 0px 0px #90ee90;
+  }
+  to {
+    box-shadow: -20px -20px 0px 0px #6FD25A;
+  }
+}
